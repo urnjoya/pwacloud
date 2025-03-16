@@ -5,7 +5,7 @@ async function fetchVersion() {
         // response ko json mein convert karo
         let data = await response.json();
 
-        document.getElementById("version-info").innerHTML = `Version: ${data.version} last update: ${data.lastupdate}`;
+        document.getElementById("version-info").innerHTML = `Version: ${data.version} last update: ${data.last_update}`;
     }
     catch (error) {
         console.log("Version fetch failed:", error);
